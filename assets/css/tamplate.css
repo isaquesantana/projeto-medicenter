@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Variáveis */
+
+:root {
+    --cor_principal: #39aae1;
+    --cor2: #0079C7;
+    --cor3: #2B4C99;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul, nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+
+nav .active a, nav a:hover {
+    background-color: var(--cor_principal);
+    color: white;
+}
+
+/* Seção do Banner Principal */
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');
+    background-position: center top;
+    background-size: cover;
+    height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline h1 {
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 500;
+    text-shadow: 0px 1px 3px #00000096;
+    max-width: 370px;
+}
+
+.banner_headline p {
+    color: #ffffff;
+    font-size: 1.2em;
+    text-shadow: 0px 1px 3px #00000096;
+    font-weight: normal;
+    max-width: 360px;
+    margin-top: 30px;
+}
+
+/* Mini Banners */
+.banner_options {
+    display: flex;
+
+}
+
+.mine_banner_1,
+.mine_banner_2,
+.mine_banner_3 {
+    flex: 1;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.mine_banner_1 {
+    background-color: var(--cor_principal);
+}
+
+.mine_banner_2 {
+    background-color: var(--cor2);
+}
+
+.mine_banner_3 {
+    background-color: var(--cor3);
+}
+
+.mine_banner_title {
+    font-size: 1.4em;
+}
+
+.mine_banner_desc {
+    font-size: 0.85em;
+    margin: 20px 0px;
+}
+
+.banner_options a {
+    display: inline-block;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    margin-top: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.banner_options a:hover {
+    color: coral;
+    border: 1px solid coral;
+}
+
+.mine_banner_title3 {
+    margin-bottom: 8px;
+}
+
+.horarios {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #afafaf;
+    font-size: 0.9em;
+}
+/* ================================ */
+
+/* Edição do Área do Conteúdo Principal */
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral main {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+/* ================================ */
+
+/* Títulos dos Widgets */
+.widget_title {
+    margin: 30px 0 20px 0;
+}
+
+.widget_title_text {
+    color: #000000;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.widget_title_bar {
+    width: 50px;
+    height: 3px;
+    background-color: var(--cor_principal);
+    margin-top: 10px;
+}
+/* ================================ */
+
+/* ÁREA LATERAL DO SITE */
+
+/* Widget Deparments */
+
+/* SOLUÇÃO 1 */
+.deparments-grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.widget_deparments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+    background-color: var(--cor_principal);
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* ********************************
+
+/* Widget de Agendamento */
+
+.widget_scheduling {
+    font-size: 0.9em;
+}
+
+.widget_scheduling_dec {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.widget_contact {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid #afafaf;
+    font-style: italic;
+}
+
+.widget_icons {
+    width: 20px;
+    padding-right: 15px;
+}
+
+.negrito {
+    font-weight: 600;
+}
+
+/* ******************************** */
+
+/* ÁREA DOS ARTIGOS */
+
+.articles_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+/* Marcador da data e número de comentários */
+article .news_data {
+    display: flex;
+}
+
+article .news_posted_at {
+    background-color: var(--cor3);
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px;
+    margin-right: 3px;
+}
+
+article .news_commentts {
+    background-color: var(--cor_principal);
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+
+/* ******************************** */
+
+/* Thumbnail | Título | Textos */
+article .news_thumbnail {
+    margin-top: 20px;
+}
+
+article .news_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+article .news_title {
+    margin: 25px 0px;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+article .news_resume {
+    color: #414141;
+    font-size: 0.85em;
+    line-height: 1.42em;
+}
+
+article a {
+    text-decoration: none;   
+}
+
+article a:visited {
+    color: #000000;
+}
+
+/* RODAPÉ */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+}
+
+.flexColum {
+    flex-direction: column;
+}
+
+/* Área do Menu */
+.footer_menu {
+    display: flex;
+}
+
+.fm_1, .fm_2, .fm_3 {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.fm_1 {
+    background-color: var(--cor_principal);
+}
+
+.fm_2 {
+    background-color: var(--cor2);
+}
+
+.fm_3 {
+    background-color: var(--cor3);
+}
+
+.fm_title {
+    font-size: 1.4em;
+}
+
+.fm_desc {
+    font-size: 0.8em;
+}
+
+.footer_menu a {
+    flex: 1;
+    text-decoration: none;
+}
+
+/* ******************************** */
+
+/* Área das Informações Extras */
+
+.footer_area {
+    display: flex;
+    color: #ffffff;
+}
+
+.footer_areaitem {
+    flex: 1;
+}
+
+footer .widget_title_text {
+    color: #ffffff;
+}
+
+/* Contatos */
+.footer_area_contact {
+    font-size: 0.9em;
+    color: #afafaf;
+}
+
+.footer_contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foonter_contact_text {
+    margin-right: 10px;
+}
+
+.footer_social {
+    margin-top: 20px;
+}
+
+.social_icons {
+    height: 60px;
+}
+/* -------------------------------- */
+
+.footer_copy {
+    color: #5c5c5c;
+    font-size: 0.8em;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-top: 1px solid #696969;
+}
+
+.menuMobile {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin: 40px 20px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color: var(--cor_principal);
+}
+
+@media (max-width: 680px ) {
+    .container {
+        flex-direction: column;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    header {
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        background-color: #ffffff;
+
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .logo {padding-left: 20px;}
+    
+
+    #banner { 
+        height: auto;
+    }
+
+    .banner_headline {
+        padding: 40px 20px;
+    }
+
+    main, aside {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    aside {
+        margin-bottom: 40px;
+    }
+    
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    
+    .deparments-grid {
+        width: auto;
+        height: auto;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .widget_deparments {
+        width: 170px;
+        height: 50px;
+        margin: 8px;
+
+     }
+        
+    .footer_area { 
+        flex-direction: column;
+    } 
+
+    .footer_menu {
+        flex-direction: column;
+    }
+
+    .footer_area_contact {
+        padding-right: 100px;
+    }
+
+    .footer_copy {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 860px ) {
+    .logo {
+        padding-left: 20px;
+    }
+    
+    main, 
+    .banner_headline {
+        padding-left: 20px;
+    }
+    
+    .banner_headline {
+        
+    }
+
+    .deparments-grid {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    
+    .widget_deparments {
+        width: 96%;
+        height: 50px;
+        margin-bottom: 10px;
+    }   
+
+    .footer_area {
+        padding-left: 20px;
+    }
+}

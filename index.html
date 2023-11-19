@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tamplate.css">
+    <title>MediCenter</title>
+
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none' } else {
+                        document.querySelector(".menu nav ul").style.display = 'flex'
+                    }
+            })
+        };
+    </script>
+
+</head>
+<body>
+    <!-- CABEÇALHO DO SITE -->
+    <header>
+        <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="assets/images/logo.png" alt="logo da clínica"></a>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
+
+                        <ul>
+                            <li class="active"><a href="#">HOME</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Timetable</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            
+        </div>
+    </header>
+
+    <section id="banner">
+
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Top notch experience</h1>
+                <p>Medicenter is a resposive tamplate perfect for all screen sizes</p>
+            </div>
+            
+            <!-- Seção dos Mini Banners -->
+            <div class="banner_options">
+                <div class="mine_banner_1">
+                    <h3 class="mine_banner_title">Emergency Case</h3>
+                    <p class="mine_banner_desc">Here, we provide crucial information and resources for handling critical situations, from first aid to safety measures.</p>
+
+                    <a href="#">Read more</a>
+                </div>
+                <div class="mine_banner_2">
+                    <h3 class="mine_banner_title">Doctors Timetable</h3>
+                    <p class="mine_banner_desc">Here, you will find detailed information about the working hours of our highly qualified healthcare professionals.                        
+                    </p>
+
+                    <a href="#">Read more</a>
+                </div>
+                <div class="mine_banner_3">
+                    <h3 class="mine_banner_title mine_banner_title3 ">Opening Hours </h3>
+                    <div class="horarios">
+                        <p>Monday - Friday</p> <p>8.00 - 17.00</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Saturday</p> <p>8.00 - 17.00</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Sunday</p> <p>8.00 - 17.00</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PRINCIPAL DO SITE/ parte das publicações dos artigos -->
+
+    <section id="geral">
+        <div class="container">
+            <main>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Latest News</div>
+                        <div class="widget_title_bar"></div> 
+                    </div>
+                    <div class="widget_body articles_flex">
+                       <article>
+                            <a href="#">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_commentts">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/images/capa-artigo.jpg" alt="">
+                                </div>
+                                <h2 class="news_title"> The Surprising Benefits of Daily Exercise</h2>
+                                <p class="news_resume">Stay active for a healthier life! Daily exercise not only strengthens your muscles but also improves cardiovascular function, reducing the risk of heart diseases. Discover in this article how small changes in your routine can have a significant impact on your overall health.</p>
+                            </a>
+                       </article>
+
+                       <article>
+                        <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_commentts">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="assets/images/capa-artigo.jpg" alt="">
+                            </div>
+                            <h2 class="news_title"> Mindful Eating: The Path to a Balanced Life</h2>
+                            <p class="news_resume">The way we eat directly affects our well-being. Explore the importance of mindful eating and how healthy food choices can boost your energy, improve digestion, and strengthen your immune system. Transform your relationship with food for a healthier and more balanced life.</p>
+                        </a>
+                   </article>
+
+                   <article>
+                    <a href="">
+                        <div class="news_data">
+                            <div class="news_posted_at">12 DEC 12</div>
+                            <div class="news_commentts">2</div>
+                        </div>
+                        <div class="news_thumbnail">
+                            <img src="assets/images/capa-artigo.jpg" alt="">
+                        </div>
+                        <h2 class="news_title"> A Sound Mind in a Healthy Body: The Power of Mental Health</h2>
+                        <p class="news_resume">Mental health is a vital part of our overall well-being. In this article, we address practical strategies to reduce stress, cultivate emotional resilience, and promote a positive mental state. Discover how taking care of your mind can positively impact every aspect of your life.</p>
+                    </a>
+               </article>
+
+               <article>
+                <a href="">
+                    <div class="news_data">
+                        <div class="news_posted_at">12 DEC 12</div>
+                        <div class="news_commentts">2</div>
+                    </div>
+                    <div class="news_thumbnail">
+                        <img src="assets/images/capa-artigo.jpg" alt="">
+                    </div>
+                    <h2 class="news_title">Sleep Well, Live Better: The Importance of Sleep in Health</h2>
+                    <p class="news_resume">A good night's sleep is essential for physical and mental recovery. Explore tips to improve sleep quality, understand the benefits of a healthy sleep cycle, and learn how sleep deprivation can negatively affect your health. Discover the secret to a more rejuvenating life!</p>
+                </a>
+                </article>                   
+                </div>
+            </main>
+
+            <!-- ÁREA LATERAL DO SITE  -->
+            <aside>
+
+                <!-- Widget dos Departamentos -->
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Deparments</div>
+                        <div class="widget_title_bar"></div> 
+                    </div>
+                    <div class="widget_body deparments-grid">
+                        
+                        <div class="widget_deparments">Emergency</div>
+                        <div class="widget_deparments">Evaluation</div>
+                        <div class="widget_deparments">Management</div>
+                        <div class="widget_deparments">Clinic</div>
+                        <div class="widget_deparments">Human Resources</div>
+                        <div class="widget_deparments">Supplies</div>
+                       
+                    </div>  
+
+                <!-- Widget de Agendamento -->
+                <div class="widget_scheduling">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Make An Appointment</div>
+                        <div class="widget_title_bar"></div> 
+                    </div>
+                    <div class="widget_body">
+                        <p class="widget_scheduling_dec">Schedule your appointment now. We take care of your health with care and efficiency.</p>
+
+                        <div class="widget_contact">
+                            <img class="widget_icons" src="assets/images/tel-icon.png" alt="icon tel">
+                            <p>by phone: <b> 55-800-643-4300</b></p></div>
+                        <div class="widget_contact">
+                            <img class="widget_icons" src="assets/images/mail-icon.png" alt="icon tel"><p> by e-mail: isaque@isaquesantana.com</p>
+                        </div>
+                        <div class="widget_contact">
+                            <img class="widget_icons" src="assets/images/form-icon.png" alt="icon tel">
+                            <p>or <b> fill on the form </b>  on our contact page</p>
+                        </div>
+
+                    </di>                    
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+     <div class="container flexColum">
+
+        <!-- Área do Menu do Rodapé -->
+        <div class="footer_menu">
+            <a href="">
+                <div class="fm_1">
+                    <p class="fm_title">Health Insurance</p>
+                    <p class="fm_desc">Here in medicenter we have individual →</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="fm_2">
+                    <p class="fm_title">Medical Records</p>
+                        <p class="fm_desc">Here in medicenter we have individual →</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="fm_3">
+                    <p class="fm_title">Online Bill Pay</p>
+                        <p class="fm_desc">Here in medicenter we have individual →</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Informações Extras do Rodapé -->
+        <div class="footer_area">
+            <dvi class="footer_areaitem">
+                <div class="widget_title">
+                    <div class="widget_title_text">MediCenter Clinic</div>
+                    <div class="widget_title_bar"></div> 
+                </div>
+                <div class="footer_area_contact">
+                    <p>We take care of your health with care and efficiency.</p>
+                    <br>
+                    <p>Medicenter Clinic</p>
+                    <div class="footer_contacts">
+                        <div>
+                            33 Farlane Street <br>
+                            Keilor East <br>
+                            VIC 3033, Australia
+                        </div>
+                        <div>
+                            +123 455 455 <br>
+                            +123 655 655 <br>
+                            isaque@isaquesantana.com
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_social">
+                    <a href=""><img class="social_icons" src="assets/images/icon-facebook.png" alt=""></a>
+                    <a href=""><img class="social_icons" src="assets/images/icon-linkedin.png" alt=""></a>
+                    <a href=""><img class="social_icons" src="assets/images/icon-calendar.png" alt=""></a>
+                    <a href=""><img class="social_icons" src="assets/images/icon-mail.png" alt=""></a>
+                </div>
+
+
+            </dvi>
+            <dvi class="footer_areaitem">
+                <div class="widget_title">
+                    <div class="widget_title_text">Latest Posts</div>
+                    <div class="widget_title_bar"></div> 
+                </div>
+            </dvi>
+            <dvi class="footer_areaitem"></dvi>            
+        </div>
+
+        <div class="footer_copy">© Copyright - <b>MediCenter</b> Template by <b>QuanticaLabs</b></div>
+
+
+     </div>
+
+
+    </footer>
+
+
+
+</body>
+</html>
